@@ -1,0 +1,43 @@
+body{
+    width: 800px;
+    margin:0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template: 
+    "header header header" 150px
+    "left   center right" 1fr
+    "footer footer footer"  200px
+    / 100px 1fr 150px
+    ; 
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: left;
+}
+
+main{
+    grid-area: center;
+}
+
+aside{
+    grid-area: right;
+}
+
+footer{
+    grid-area: footer;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        grid-template:
+            "header" 150px
+            "center" 1fr
+            "left  "
+            "right "
+            "footer" 300px;
+    }
+}

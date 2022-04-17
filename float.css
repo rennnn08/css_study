@@ -1,0 +1,36 @@
+body {
+    min-width: 550px;
+    min-height: 100vh;
+}
+
+div {
+    padding-left: 200px;
+    /* LC width */
+    padding-right: 150px;
+    /* RC width */
+}
+
+main {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+nav {
+    float: left;
+    position: relative;
+    margin-left: -100%;
+    width: 200px;
+    right: 200px;
+}
+
+aside {
+    position: relative;
+    float: left;
+    width: 150px;
+    margin-right: -150px;
+}
+
+footer {
+    clear: both;
+}
